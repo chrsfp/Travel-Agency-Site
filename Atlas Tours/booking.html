@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="el">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="body.css">
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <script type="text/javascript" src="javascript.js" defer></script>
+        <title>Atlas Tours - Κρατήσεις</title>
+    </head>
+    <body>
+        <header id="anchor">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                    <a href="index.html">
+                        <p>ATLAS TOURS</p>
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <div class="navbar-links">
+                        <ul>
+                            <a href="index.html">Αρχική</a>
+                            <div class="dropdown">
+                                <button class="dropbtn navbar-links">Προορισμοί
+                                <i class="fa fa-caret-down" style="position: relative; left: 3px"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="zagorochoria.html">Ζαγοροχώρια</a>
+                                    <a href="santorini.html">Σαντορίνη</a>
+                                    <a href="athens.html">Αθήνα</a>
+                                </div>
+                            </div>
+                            <a href="booking.html" class="nav-link-active">Κάντε Κράτηση</a>
+                            <a href="contact.html">Επικοινωνία</a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <a id="scrollup-off" href="#anchor" style="position: fixed; z-index: 2147483647;"><i class="fa fa-chevron-up"></i></a>
+        <br><br><br>
+        <div style="width: 50%">
+            <h2 style="position: relative;left:50%;">Κάντε Κράτηση</h2>
+        </div>
+        <div class="book-form">
+            <form>
+                <div class="content">
+                    <label for="fname" class="required">Όνομα:</label>
+                    <input type="text" name="fname" placeholder="Όνομα" required>
+                    <label for="lname" class="required">Επώνυμο:</label>
+                    <input type="text" name="lname" placeholder="Επώνυμο" required>
+                    <label for="phone-number" class="required">Τηλέφωνο:</label>
+                    <input type="tel" name="phone-number" placeholder="Αριθμός Τηλεφώνου"  required>
+                    <label for="email">Διεύθυνση email:</label>
+                    <input type="email" name="email" placeholder="Διεύθυνση email">
+                    <fieldset>
+                        <div style="display:inline-block; width: 49%;">
+                            <label for="destination" class="required">Προορισμός:</label>
+                            <select name="destination">
+                                <option value="zagorochoria">Ζαγοροχώρια</option>
+                                <option value="santorini">Σαντορίνη</option>
+                                <option value="athens">Αθήνα</option>
+                            </select>
+                        </div>
+                        <div style="display:inline-block; width: 50%">
+                            <label for="people" class="required">Άτομα:</label>
+                            <select name="people">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+                <input type="submit" value="Υποβολή"required>
+            </form>
+        </div>
+        <br><br><br>
+        <br><br><br>
+        <footer>
+            <div class="footer-content">
+                <div class="logo-footer box">
+                    <a href="index.html">
+                    <img src="images/logo.png" alt="logo" />
+                    </a>
+                    <br>
+                    <a href="index.html">ATLAS TOURS</a>
+                </div>
+                <div class="left box">
+                    <div class="upper">
+                        <div class="topic">Σχετικά με</div>
+                        <p>Ο Ταξιδιωτικός Όμιλος Atlas Tours παρέχει ταξιδιωτικές υπηρεσίες υψηλής ποιότητας εδώ και 38 χρόνια.
+                            Διαθέτει τον μεγαλύτερο στόλο εξοπλισμένων λεωφορίων στην Ελλάδα, με προορισμούς σε όλη την Ελλάδα και το εξωτερικό.
+                        </p>
+                    </div>
+                    <div class="lower">
+                        <div class="topic">Επικοινωνήστε μαζί μας</div>
+                        <div class="phone">
+                            <a href="tel: 210420696969">
+                            <i class="fas fa-phone-volume"></i>+30 210 98 76543</a>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:atlastours@atlas.com">
+                            <i class="fas fa-envelope"></i>atlastours@atlas.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle box">
+                    <div class="topic">Υπηρεσίες</div>
+                    <div>
+                        <a href="index.html">Αρχική</a>
+                    </div>
+                    <div>
+                        <a href="contact.html">Υποστήριξη</a>
+                    </div>
+                </div>
+                <div class="right box">
+                    <div class="topic">Εγγραφή</div>
+                    <form action="">
+                        <input type="text" placeholder="Διεύθυνση email">
+                        <input type="submit" name="" value="Αποστολή">
+                        <div class="media-icons">
+                            <div class="facebook">
+                                <a href="https://www.facebook.com">
+                                <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="instagram">
+                                <a href="https://www.instagram.com">
+                                <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="twitter">
+                                <a href="https://www.twitter.com">
+                                <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="youtube">
+                                <a href="https://www.youtube.com">
+                                <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Copyright © 2022 <a href="index.html">Atlas Tours</a> Με επιφύλαξη όλων των δικαιωμάτων. </p>
+            </div>
+        </footer>
+    </body>
+</html>

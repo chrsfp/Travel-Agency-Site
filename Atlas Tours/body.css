@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*Anchor*/
+#scrollup-on {
+    background: rgba(69, 75, 84, 0.7) none repeat scroll 0 0;
+    border-radius: 5%;
+    bottom: 30px;
+    color: #fff;
+    font-size: 12px;
+    height: 40px;
+    text-decoration: none;
+    line-height: 38px;
+    right: 30px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+}
+
+#scrollup-off {
+    display: none;
+}
+
+#scrollUp-on i {
+    display: block;
+    line-height: 35px;
+}
+
+#scrollup-on:hover {
+    background: rgba(69, 75, 84, 1);
+    color: #eb2f06;
+}
+
+/*Collapsible*/
+.collapsible {
+    display: block;
+    background-color: #666;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    margin: .5px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.collapsible:hover {
+    background-color: rgba(51, 51, 51, .79);
+    color: #eb2f06;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #222;
+    font-weight: bold;
+    margin-left: 5px;
+    float: right;
+    position: relative;
+    right: 0px;
+}
+
+.collapsible-active:after {
+    content: "\2212";
+}
+
+#content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: max-height 0.3s ease-out;
+    background-color: #ddd;
+}
+
+.main-content {
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+
+.head-content {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    font-size: 20px;
+}
+
+.main-content .book {
+    position: relative;
+    justify-content: center;
+    height: 42px;
+    width: 100%;
+    font-size: 20px;
+    color: #d9d9d9;
+    background: #eb2f06;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 2px solid #eb2f06;
+    margin: 0px;
+    transition: all .3s ease-in-out;
+}
+
+.main-content .book:hover {
+    background: none;
+    color: #eb2f06;
+}
+
+@media screen and (max-width: 800px) {
+    .head-content {
+        position: relative;
+        width: 90%;
+        left: 5%;
+    }
+
+    .main-content {
+        box-decoration-break: 5px solid black;
+        position: relative;
+        width: 90%;
+        left: 5%;
+    }
+
+    .main-content ul {
+        position: relative;
+        left: 5% !important;
+    }
+}
+
+#book-form {
+    position: fixed;
+    display: grid;
+    top: 11%;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 950px) {
+    #book-form {
+        top: 5%;
+    }
+}
+
+.item {
+    position: relative;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%
+}
+
+.schedule {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+}
+
+.location a {
+    color: blue;
+    margin-left: 10px;
+    transition: .3s ease;
+}
+
+.location a:hover {
+    color: red;
+}
+
+.dest-image {
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
